@@ -1,0 +1,217 @@
+<%= form_for(@product) do |f| %>
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% @product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :SKU %><br />
+    <%= f.text_field :SKU %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :URL_to_product %><br />
+    <%= f.text_field :URL_to_product %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :Retail_Price %><br />
+    <%= f.text_field :Retail_Price %>
+  </div>
+  <div class="field">
+    <%= f.label :URL_to_image %><br />
+    <%= f.text_field :URL_to_image %>
+  </div>
+  <div class="field">
+    <%= f.label :URL_to_thumbnail_image %><br />
+    <%= f.text_field :URL_to_thumbnail_image %>
+  </div>
+  <div class="field">
+    <%= f.label :Commission %><br />
+    <%= f.text_field :Commission %>
+  </div>
+  <div class="field">
+    <%= f.label :Category %><br />
+    <%= f.text_field :Category %>
+  </div>
+  <div class="field">
+    <%= f.label :Subcategory %><br />
+    <%= f.text_field :Subcategory %>
+  </div>
+  <div class="field">
+    <%= f.label :Description %><br />
+    <%= f.text_field :Description %>
+  </div>
+  <div class="field">
+    <%= f.label :SearchTerms %><br />
+    <%= f.text_field :SearchTerms %>
+  </div>
+  <div class="field">
+    <%= f.label :Status %><br />
+    <%= f.text_field :Status %>
+  </div>
+  <div class="field">
+    <%= f.label :MerchantID %><br />
+    <%= f.text_field :MerchantID %>
+  </div>
+  <div class="field">
+    <%= f.label :Custom_1 %><br />
+    <%= f.text_field :Custom_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :Custom_2 %><br />
+    <%= f.text_field :Custom_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :Custom_3 %><br />
+    <%= f.text_field :Custom_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :Custom_4 %><br />
+    <%= f.text_field :Custom_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :Custom_5 %><br />
+    <%= f.text_field :Custom_5 %>
+  </div>
+  <div class="field">
+    <%= f.label :StoreID %><br />
+    <%= f.text_field :StoreID %>
+  </div>
+  <div class="field">
+    <%= f.label :Manufacturer %><br />
+    <%= f.text_field :Manufacturer %>
+  </div>
+  <div class="field">
+    <%= f.label :PartNumber %><br />
+    <%= f.text_field :PartNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :MerchantCategory %><br />
+    <%= f.text_field :MerchantCategory %>
+  </div>
+  <div class="field">
+    <%= f.label :MerchantSubCategory %><br />
+    <%= f.text_field :MerchantSubCategory %>
+  </div>
+  <div class="field">
+    <%= f.label :ShortDescription %><br />
+    <%= f.text_field :ShortDescription %>
+  </div>
+  <div class="field">
+    <%= f.label :ISBN %><br />
+    <%= f.text_field :ISBN %>
+  </div>
+  <div class="field">
+    <%= f.label :UPC %><br />
+    <%= f.text_field :UPC %>
+  </div>
+  <div class="field">
+    <%= f.label :CrossSell %><br />
+    <%= f.text_field :CrossSell %>
+  </div>
+  <div class="field">
+    <%= f.label :MerchantGroup %><br />
+    <%= f.text_field :MerchantGroup %>
+  </div>
+  <div class="field">
+    <%= f.label :MerchantSubgroup %><br />
+    <%= f.text_field :MerchantSubgroup %>
+  </div>
+  <div class="field">
+    <%= f.label :CompatibleWith %><br />
+    <%= f.text_field :CompatibleWith %>
+  </div>
+  <div class="field">
+    <%= f.label :CompareTo %><br />
+    <%= f.text_field :CompareTo %>
+  </div>
+  <div class="field">
+    <%= f.label :QuantityDiscount %><br />
+    <%= f.text_field :QuantityDiscount %>
+  </div>
+  <div class="field">
+    <%= f.label :Bestseller %><br />
+    <%= f.text_field :Bestseller %>
+  </div>
+  <div class="field">
+    <%= f.label :AddToCartURL %><br />
+    <%= f.text_field :AddToCartURL %>
+  </div>
+  <div class="field">
+    <%= f.label :ReviewsRSSURL %><br />
+    <%= f.text_field :ReviewsRSSURL %>
+  </div>
+  <div class="field">
+    <%= f.label :Option1 %><br />
+    <%= f.text_field :Option1 %>
+  </div>
+  <div class="field">
+    <%= f.label :Option2 %><br />
+    <%= f.text_field :Option2 %>
+  </div>
+  <div class="field">
+    <%= f.label :Option3 %><br />
+    <%= f.text_field :Option3 %>
+  </div>
+  <div class="field">
+    <%= f.label :Option4 %><br />
+    <%= f.text_field :Option4 %>
+  </div>
+  <div class="field">
+    <%= f.label :Option5 %><br />
+    <%= f.text_field :Option5 %>
+  </div>
+  <div class="field">
+    <%= f.label :ReservedForFutureUse %><br />
+    <%= f.text_field :ReservedForFutureUse %>
+  </div>
+  <div class="field">
+    <%= f.label :ReservedForFutureUse %><br />
+    <%= f.text_field :ReservedForFutureUse %>
+  </div>
+  <div class="field">
+    <%= f.label :ReservedForFutureUse %><br />
+    <%= f.text_field :ReservedForFutureUse %>
+  </div>
+  <div class="field">
+    <%= f.label :ReservedForFutureUse %><br />
+    <%= f.text_field :ReservedForFutureUse %>
+  </div>
+  <div class="field">
+    <%= f.label :ReservedForFutureUse %><br />
+    <%= f.text_field :ReservedForFutureUse %>
+  </div>
+  <div class="field">
+    <%= f.label :ReservedForFutureUse %><br />
+    <%= f.text_field :ReservedForFutureUse %>
+  </div>
+  <div class="field">
+    <%= f.label :ReservedForFutureUse %><br />
+    <%= f.text_field :ReservedForFutureUse %>
+  </div>
+  <div class="field">
+    <%= f.label :ReservedForFutureUse %><br />
+    <%= f.text_field :ReservedForFutureUse %>
+  </div>
+  <div class="field">
+    <%= f.label :ReservedForFutureUse %><br />
+    <%= f.text_field :ReservedForFutureUse %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

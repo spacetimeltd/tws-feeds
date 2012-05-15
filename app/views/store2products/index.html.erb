@@ -1,0 +1,239 @@
+<h1>Listing store2products</h1>
+
+<table>
+  <tr>
+    <th>Catalogid</th>
+    <th>Sku</th>
+    <th>Categories</th>
+    <th>Mfgid</th>
+    <th>Manufacturer</th>
+    <th>Distributor</th>
+    <th>Cost</th>
+    <th>Price</th>
+    <th>Price2</th>
+    <th>Price3</th>
+    <th>Saleprice</th>
+    <th>Onsale</th>
+    <th>Stock</th>
+    <th>Stock alert</th>
+    <th>Display stock</th>
+    <th>Weight</th>
+    <th>Minimumorder</th>
+    <th>Maximumorder</th>
+    <th>Date created</th>
+    <th>Description</th>
+    <th>Extended description</th>
+    <th>Keywords</th>
+    <th>Sorting</th>
+    <th>Thumbnail</th>
+    <th>Image1</th>
+    <th>Image2</th>
+    <th>Image3</th>
+    <th>Image4</th>
+    <th>Realmedia</th>
+    <th>Related</th>
+    <th>Accessories</th>
+    <th>Shipcost</th>
+    <th>Imagecaption1</th>
+    <th>Imagecaption2</th>
+    <th>Imagecaption3</th>
+    <th>Imagecaption4</th>
+    <th>Title</th>
+    <th>Metatags</th>
+    <th>Displaytext</th>
+    <th>Eproduct password</th>
+    <th>Eproduct random</th>
+    <th>Eproduct expire</th>
+    <th>Eproduct path</th>
+    <th>Eproduct serial</th>
+    <th>Eproduct instructions</th>
+    <th>Homespecial</th>
+    <th>Categoryspecial</th>
+    <th>Hide</th>
+    <th>Free shipping</th>
+    <th>Nontax</th>
+    <th>Notforsale</th>
+    <th>Giftcertificate</th>
+    <th>Userid</th>
+    <th>Last update</th>
+    <th>Extra field 1</th>
+    <th>Extra field 2</th>
+    <th>Extra field 3</th>
+    <th>Extra field 4</th>
+    <th>Extra field 5</th>
+    <th>Extra field 6</th>
+    <th>Extra field 7</th>
+    <th>Extra field 8</th>
+    <th>Extra field 9</th>
+    <th>Extra field 10</th>
+    <th>Usecatoptions</th>
+    <th>Qtyoptions</th>
+    <th>Price 1</th>
+    <th>Price 2</th>
+    <th>Price 3</th>
+    <th>Price 4</th>
+    <th>Price 5</th>
+    <th>Price 6</th>
+    <th>Price 7</th>
+    <th>Price 8</th>
+    <th>Price 9</th>
+    <th>Price 10</th>
+    <th>Hide 1</th>
+    <th>Hide 2</th>
+    <th>Hide 3</th>
+    <th>Hide 4</th>
+    <th>Hide 5</th>
+    <th>Hide 6</th>
+    <th>Hide 7</th>
+    <th>Hide 8</th>
+    <th>Hide 9</th>
+    <th>Hide 10</th>
+    <th>Minorderpkg</th>
+    <th>Listing displaytype</th>
+    <th>Show out stock</th>
+    <th>Pricing groupopt</th>
+    <th>Qtydiscount opt</th>
+    <th>Loginlevel</th>
+    <th>Redirectto</th>
+    <th>Accessgroup</th>
+    <th>Self ship</th>
+    <th>Tax code</th>
+    <th>Eproduct reuseserial</th>
+    <th>Nonsearchable</th>
+    <th>Instock message</th>
+    <th>Outofstock message</th>
+    <th>Backorder message</th>
+    <th>Height</th>
+    <th>Width</th>
+    <th>Depth</th>
+    <th>Reward points</th>
+    <th>Reward disable</th>
+    <th>Reward redeem</th>
+    <th>Filename</th>
+    <th>Fractional qty</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @store2products.each do |store2product| %>
+  <tr>
+    <td><%= store2product.catalogid %></td>
+    <td><%= store2product.sku %></td>
+    <td><%= store2product.categories %></td>
+    <td><%= store2product.mfgid %></td>
+    <td><%= store2product.manufacturer %></td>
+    <td><%= store2product.distributor %></td>
+    <td><%= store2product.cost %></td>
+    <td><%= store2product.price %></td>
+    <td><%= store2product.price2 %></td>
+    <td><%= store2product.price3 %></td>
+    <td><%= store2product.saleprice %></td>
+    <td><%= store2product.onsale %></td>
+    <td><%= store2product.stock %></td>
+    <td><%= store2product.stock_alert %></td>
+    <td><%= store2product.display_stock %></td>
+    <td><%= store2product.weight %></td>
+    <td><%= store2product.minimumorder %></td>
+    <td><%= store2product.maximumorder %></td>
+    <td><%= store2product.date_created %></td>
+    <td><%= store2product.description %></td>
+    <td><%= store2product.extended_description %></td>
+    <td><%= store2product.keywords %></td>
+    <td><%= store2product.sorting %></td>
+    <td><%= store2product.thumbnail %></td>
+    <td><%= store2product.image1 %></td>
+    <td><%= store2product.image2 %></td>
+    <td><%= store2product.image3 %></td>
+    <td><%= store2product.image4 %></td>
+    <td><%= store2product.realmedia %></td>
+    <td><%= store2product.related %></td>
+    <td><%= store2product.accessories %></td>
+    <td><%= store2product.shipcost %></td>
+    <td><%= store2product.imagecaption1 %></td>
+    <td><%= store2product.imagecaption2 %></td>
+    <td><%= store2product.imagecaption3 %></td>
+    <td><%= store2product.imagecaption4 %></td>
+    <td><%= store2product.title %></td>
+    <td><%= store2product.metatags %></td>
+    <td><%= store2product.displaytext %></td>
+    <td><%= store2product.eproduct_password %></td>
+    <td><%= store2product.eproduct_random %></td>
+    <td><%= store2product.eproduct_expire %></td>
+    <td><%= store2product.eproduct_path %></td>
+    <td><%= store2product.eproduct_serial %></td>
+    <td><%= store2product.eproduct_instructions %></td>
+    <td><%= store2product.homespecial %></td>
+    <td><%= store2product.categoryspecial %></td>
+    <td><%= store2product.hide %></td>
+    <td><%= store2product.free_shipping %></td>
+    <td><%= store2product.nontax %></td>
+    <td><%= store2product.notforsale %></td>
+    <td><%= store2product.giftcertificate %></td>
+    <td><%= store2product.userid %></td>
+    <td><%= store2product.last_update %></td>
+    <td><%= store2product.extra_field_1 %></td>
+    <td><%= store2product.extra_field_2 %></td>
+    <td><%= store2product.extra_field_3 %></td>
+    <td><%= store2product.extra_field_4 %></td>
+    <td><%= store2product.extra_field_5 %></td>
+    <td><%= store2product.extra_field_6 %></td>
+    <td><%= store2product.extra_field_7 %></td>
+    <td><%= store2product.extra_field_8 %></td>
+    <td><%= store2product.extra_field_9 %></td>
+    <td><%= store2product.extra_field_10 %></td>
+    <td><%= store2product.usecatoptions %></td>
+    <td><%= store2product.qtyoptions %></td>
+    <td><%= store2product.price_1 %></td>
+    <td><%= store2product.price_2 %></td>
+    <td><%= store2product.price_3 %></td>
+    <td><%= store2product.price_4 %></td>
+    <td><%= store2product.price_5 %></td>
+    <td><%= store2product.price_6 %></td>
+    <td><%= store2product.price_7 %></td>
+    <td><%= store2product.price_8 %></td>
+    <td><%= store2product.price_9 %></td>
+    <td><%= store2product.price_10 %></td>
+    <td><%= store2product.hide_1 %></td>
+    <td><%= store2product.hide_2 %></td>
+    <td><%= store2product.hide_3 %></td>
+    <td><%= store2product.hide_4 %></td>
+    <td><%= store2product.hide_5 %></td>
+    <td><%= store2product.hide_6 %></td>
+    <td><%= store2product.hide_7 %></td>
+    <td><%= store2product.hide_8 %></td>
+    <td><%= store2product.hide_9 %></td>
+    <td><%= store2product.hide_10 %></td>
+    <td><%= store2product.minorderpkg %></td>
+    <td><%= store2product.listing_displaytype %></td>
+    <td><%= store2product.show_out_stock %></td>
+    <td><%= store2product.pricing_groupopt %></td>
+    <td><%= store2product.qtydiscount_opt %></td>
+    <td><%= store2product.loginlevel %></td>
+    <td><%= store2product.redirectto %></td>
+    <td><%= store2product.accessgroup %></td>
+    <td><%= store2product.self_ship %></td>
+    <td><%= store2product.tax_code %></td>
+    <td><%= store2product.eproduct_reuseserial %></td>
+    <td><%= store2product.nonsearchable %></td>
+    <td><%= store2product.instock_message %></td>
+    <td><%= store2product.outofstock_message %></td>
+    <td><%= store2product.backorder_message %></td>
+    <td><%= store2product.height %></td>
+    <td><%= store2product.width %></td>
+    <td><%= store2product.depth %></td>
+    <td><%= store2product.reward_points %></td>
+    <td><%= store2product.reward_disable %></td>
+    <td><%= store2product.reward_redeem %></td>
+    <td><%= store2product.filename %></td>
+    <td><%= store2product.fractional_qty %></td>
+    <td><%= link_to 'Show', store2product %></td>
+    <td><%= link_to 'Edit', edit_store2product_path(store2product) %></td>
+    <td><%= link_to 'Destroy', store2product, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Store2product', new_store2product_path %>

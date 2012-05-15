@@ -1,0 +1,2 @@
+module StoreId2ProductsHelper
+end

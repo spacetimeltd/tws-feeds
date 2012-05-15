@@ -1,0 +1,241 @@
+<h1>Listing asproducts</h1>
+
+<table>
+  <tr>
+    <th>Catalogid</th>
+    <th>Sku</th>
+    <th>Name</th>
+    <th>Categories</th>
+    <th>Mfgid</th>
+    <th>Manufacturer</th>
+    <th>Distributor</th>
+    <th>Cost</th>
+    <th>Price</th>
+    <th>Price2</th>
+    <th>Price3</th>
+    <th>Saleprice</th>
+    <th>Onsale</th>
+    <th>Stock</th>
+    <th>Stock alert</th>
+    <th>Display stock</th>
+    <th>Weight</th>
+    <th>Minimumorder</th>
+    <th>Maximumorder</th>
+    <th>Date created</th>
+    <th>Description</th>
+    <th>Extended description</th>
+    <th>Keywords</th>
+    <th>Sorting</th>
+    <th>Thumbnail</th>
+    <th>Image1</th>
+    <th>Image2</th>
+    <th>Image3</th>
+    <th>Image4</th>
+    <th>Realmedia</th>
+    <th>Related</th>
+    <th>Accessories</th>
+    <th>Shipcost</th>
+    <th>Imagecaption1</th>
+    <th>Imagecaption2</th>
+    <th>Imagecaption3</th>
+    <th>Imagecaption4</th>
+    <th>Title</th>
+    <th>Metatags</th>
+    <th>Displaytext</th>
+    <th>Eproduct password</th>
+    <th>Eproduct random</th>
+    <th>Eproduct expire</th>
+    <th>Eproduct path</th>
+    <th>Eproduct serial</th>
+    <th>Eproduct instructions</th>
+    <th>Homespecial</th>
+    <th>Categoryspecial</th>
+    <th>Hide</th>
+    <th>Free shipping</th>
+    <th>Nontax</th>
+    <th>Notforsale</th>
+    <th>Giftcertificate</th>
+    <th>Userid</th>
+    <th>Last update</th>
+    <th>Extra field 1</th>
+    <th>Extra field 2</th>
+    <th>Extra field 3</th>
+    <th>Extra field 4</th>
+    <th>Extra field 5</th>
+    <th>Extra field 6</th>
+    <th>Extra field 7</th>
+    <th>Extra field 8</th>
+    <th>Extra field 9</th>
+    <th>Extra field 10</th>
+    <th>Usecatoptions</th>
+    <th>Qtyoptions</th>
+    <th>Price 1</th>
+    <th>Price 2</th>
+    <th>Price 3</th>
+    <th>Price 4</th>
+    <th>Price 5</th>
+    <th>Price 6</th>
+    <th>Price 7</th>
+    <th>Price 8</th>
+    <th>Price 9</th>
+    <th>Price 10</th>
+    <th>Hide 1</th>
+    <th>Hide 2</th>
+    <th>Hide 3</th>
+    <th>Hide 4</th>
+    <th>Hide 5</th>
+    <th>Hide 6</th>
+    <th>Hide 7</th>
+    <th>Hide 8</th>
+    <th>Hide 9</th>
+    <th>Hide 10</th>
+    <th>Minorderpkg</th>
+    <th>Listing displaytype</th>
+    <th>Show out stock</th>
+    <th>Pricing groupopt</th>
+    <th>Qtydiscount opt</th>
+    <th>Loginlevel</th>
+    <th>Redirectto</th>
+    <th>Accessgroup</th>
+    <th>Self ship</th>
+    <th>Tax code</th>
+    <th>Eproduct reuseserial</th>
+    <th>Nonsearchable</th>
+    <th>Instock message</th>
+    <th>Outofstock message</th>
+    <th>Backorder message</th>
+    <th>Height</th>
+    <th>Width</th>
+    <th>Depth</th>
+    <th>Reward points</th>
+    <th>Reward disable</th>
+    <th>Reward redeem</th>
+    <th>Filename</th>
+    <th>Fractional qty</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @asproducts.each do |asproduct| %>
+  <tr>
+    <td><%= asproduct.catalogid %></td>
+    <td><%= asproduct.sku %></td>
+    <td><%= asproduct.name %></td>
+    <td><%= asproduct.categories %></td>
+    <td><%= asproduct.mfgid %></td>
+    <td><%= asproduct.manufacturer %></td>
+    <td><%= asproduct.distributor %></td>
+    <td><%= asproduct.cost %></td>
+    <td><%= asproduct.price %></td>
+    <td><%= asproduct.price2 %></td>
+    <td><%= asproduct.price3 %></td>
+    <td><%= asproduct.saleprice %></td>
+    <td><%= asproduct.onsale %></td>
+    <td><%= asproduct.stock %></td>
+    <td><%= asproduct.stock_alert %></td>
+    <td><%= asproduct.display_stock %></td>
+    <td><%= asproduct.weight %></td>
+    <td><%= asproduct.minimumorder %></td>
+    <td><%= asproduct.maximumorder %></td>
+    <td><%= asproduct.date_created %></td>
+    <td><%= asproduct.description %></td>
+    <td><%= asproduct.extended_description %></td>
+    <td><%= asproduct.keywords %></td>
+    <td><%= asproduct.sorting %></td>
+    <td><%= asproduct.thumbnail %></td>
+    <td><%= asproduct.image1 %></td>
+    <td><%= asproduct.image2 %></td>
+    <td><%= asproduct.image3 %></td>
+    <td><%= asproduct.image4 %></td>
+    <td><%= asproduct.realmedia %></td>
+    <td><%= asproduct.related %></td>
+    <td><%= asproduct.accessories %></td>
+    <td><%= asproduct.shipcost %></td>
+    <td><%= asproduct.imagecaption1 %></td>
+    <td><%= asproduct.imagecaption2 %></td>
+    <td><%= asproduct.imagecaption3 %></td>
+    <td><%= asproduct.imagecaption4 %></td>
+    <td><%= asproduct.title %></td>
+    <td><%= asproduct.metatags %></td>
+    <td><%= asproduct.displaytext %></td>
+    <td><%= asproduct.eproduct_password %></td>
+    <td><%= asproduct.eproduct_random %></td>
+    <td><%= asproduct.eproduct_expire %></td>
+    <td><%= asproduct.eproduct_path %></td>
+    <td><%= asproduct.eproduct_serial %></td>
+    <td><%= asproduct.eproduct_instructions %></td>
+    <td><%= asproduct.homespecial %></td>
+    <td><%= asproduct.categoryspecial %></td>
+    <td><%= asproduct.hide %></td>
+    <td><%= asproduct.free_shipping %></td>
+    <td><%= asproduct.nontax %></td>
+    <td><%= asproduct.notforsale %></td>
+    <td><%= asproduct.giftcertificate %></td>
+    <td><%= asproduct.userid %></td>
+    <td><%= asproduct.last_update %></td>
+    <td><%= asproduct.extra_field_1 %></td>
+    <td><%= asproduct.extra_field_2 %></td>
+    <td><%= asproduct.extra_field_3 %></td>
+    <td><%= asproduct.extra_field_4 %></td>
+    <td><%= asproduct.extra_field_5 %></td>
+    <td><%= asproduct.extra_field_6 %></td>
+    <td><%= asproduct.extra_field_7 %></td>
+    <td><%= asproduct.extra_field_8 %></td>
+    <td><%= asproduct.extra_field_9 %></td>
+    <td><%= asproduct.extra_field_10 %></td>
+    <td><%= asproduct.usecatoptions %></td>
+    <td><%= asproduct.qtyoptions %></td>
+    <td><%= asproduct.price_1 %></td>
+    <td><%= asproduct.price_2 %></td>
+    <td><%= asproduct.price_3 %></td>
+    <td><%= asproduct.price_4 %></td>
+    <td><%= asproduct.price_5 %></td>
+    <td><%= asproduct.price_6 %></td>
+    <td><%= asproduct.price_7 %></td>
+    <td><%= asproduct.price_8 %></td>
+    <td><%= asproduct.price_9 %></td>
+    <td><%= asproduct.price_10 %></td>
+    <td><%= asproduct.hide_1 %></td>
+    <td><%= asproduct.hide_2 %></td>
+    <td><%= asproduct.hide_3 %></td>
+    <td><%= asproduct.hide_4 %></td>
+    <td><%= asproduct.hide_5 %></td>
+    <td><%= asproduct.hide_6 %></td>
+    <td><%= asproduct.hide_7 %></td>
+    <td><%= asproduct.hide_8 %></td>
+    <td><%= asproduct.hide_9 %></td>
+    <td><%= asproduct.hide_10 %></td>
+    <td><%= asproduct.minorderpkg %></td>
+    <td><%= asproduct.listing_displaytype %></td>
+    <td><%= asproduct.show_out_stock %></td>
+    <td><%= asproduct.pricing_groupopt %></td>
+    <td><%= asproduct.qtydiscount_opt %></td>
+    <td><%= asproduct.loginlevel %></td>
+    <td><%= asproduct.redirectto %></td>
+    <td><%= asproduct.accessgroup %></td>
+    <td><%= asproduct.self_ship %></td>
+    <td><%= asproduct.tax_code %></td>
+    <td><%= asproduct.eproduct_reuseserial %></td>
+    <td><%= asproduct.nonsearchable %></td>
+    <td><%= asproduct.instock_message %></td>
+    <td><%= asproduct.outofstock_message %></td>
+    <td><%= asproduct.backorder_message %></td>
+    <td><%= asproduct.height %></td>
+    <td><%= asproduct.width %></td>
+    <td><%= asproduct.depth %></td>
+    <td><%= asproduct.reward_points %></td>
+    <td><%= asproduct.reward_disable %></td>
+    <td><%= asproduct.reward_redeem %></td>
+    <td><%= asproduct.filename %></td>
+    <td><%= asproduct.fractional_qty %></td>
+    <td><%= link_to 'Show', asproduct %></td>
+    <td><%= link_to 'Edit', edit_asproduct_path(asproduct) %></td>
+    <td><%= link_to 'Destroy', asproduct, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Asproduct', new_asproduct_path %>

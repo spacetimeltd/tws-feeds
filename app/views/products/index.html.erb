@@ -1,0 +1,121 @@
+<h1>Listing products</h1>
+
+<table>
+  <tr>
+    <th>Sku</th>
+    <th>Name</th>
+    <th>Url to product</th>
+    <th>Price</th>
+    <th>Retail price</th>
+    <th>Url to image</th>
+    <th>Url to thumbnail image</th>
+    <th>Commission</th>
+    <th>Category</th>
+    <th>Subcategory</th>
+    <th>Description</th>
+    <th>Searchterms</th>
+    <th>Status</th>
+    <th>Merchantid</th>
+    <th>Custom 1</th>
+    <th>Custom 2</th>
+    <th>Custom 3</th>
+    <th>Custom 4</th>
+    <th>Custom 5</th>
+    <th>Storeid</th>
+    <th>Manufacturer</th>
+    <th>Partnumber</th>
+    <th>Merchantcategory</th>
+    <th>Merchantsubcategory</th>
+    <th>Shortdescription</th>
+    <th>Isbn</th>
+    <th>Upc</th>
+    <th>Crosssell</th>
+    <th>Merchantgroup</th>
+    <th>Merchantsubgroup</th>
+    <th>Compatiblewith</th>
+    <th>Compareto</th>
+    <th>Quantitydiscount</th>
+    <th>Bestseller</th>
+    <th>Addtocarturl</th>
+    <th>Reviewsrssurl</th>
+    <th>Option1</th>
+    <th>Option2</th>
+    <th>Option3</th>
+    <th>Option4</th>
+    <th>Option5</th>
+    <th>Reservedforfutureuse</th>
+    <th>Reservedforfutureuse</th>
+    <th>Reservedforfutureuse</th>
+    <th>Reservedforfutureuse</th>
+    <th>Reservedforfutureuse</th>
+    <th>Reservedforfutureuse</th>
+    <th>Reservedforfutureuse</th>
+    <th>Reservedforfutureuse</th>
+    <th>Reservedforfutureuse</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+    <td><%= product.SKU %></td>
+    <td><%= product.name %></td>
+    <td><%= product.URL_to_product %></td>
+    <td><%= product.price %></td>
+    <td><%= product.Retail_Price %></td>
+    <td><%= product.URL_to_image %></td>
+    <td><%= product.URL_to_thumbnail_image %></td>
+    <td><%= product.Commission %></td>
+    <td><%= product.Category %></td>
+    <td><%= product.Subcategory %></td>
+    <td><%= product.Description %></td>
+    <td><%= product.SearchTerms %></td>
+    <td><%= product.Status %></td>
+    <td><%= product.MerchantID %></td>
+    <td><%= product.Custom_1 %></td>
+    <td><%= product.Custom_2 %></td>
+    <td><%= product.Custom_3 %></td>
+    <td><%= product.Custom_4 %></td>
+    <td><%= product.Custom_5 %></td>
+    <td><%= product.StoreID %></td>
+    <td><%= product.Manufacturer %></td>
+    <td><%= product.PartNumber %></td>
+    <td><%= product.MerchantCategory %></td>
+    <td><%= product.MerchantSubCategory %></td>
+    <td><%= product.ShortDescription %></td>
+    <td><%= product.ISBN %></td>
+    <td><%= product.UPC %></td>
+    <td><%= product.CrossSell %></td>
+    <td><%= product.MerchantGroup %></td>
+    <td><%= product.MerchantSubgroup %></td>
+    <td><%= product.CompatibleWith %></td>
+    <td><%= product.CompareTo %></td>
+    <td><%= product.QuantityDiscount %></td>
+    <td><%= product.Bestseller %></td>
+    <td><%= product.AddToCartURL %></td>
+    <td><%= product.ReviewsRSSURL %></td>
+    <td><%= product.Option1 %></td>
+    <td><%= product.Option2 %></td>
+    <td><%= product.Option3 %></td>
+    <td><%= product.Option4 %></td>
+    <td><%= product.Option5 %></td>
+    <td><%= product.ReservedForFutureUse %></td>
+    <td><%= product.ReservedForFutureUse %></td>
+    <td><%= product.ReservedForFutureUse %></td>
+    <td><%= product.ReservedForFutureUse %></td>
+    <td><%= product.ReservedForFutureUse %></td>
+    <td><%= product.ReservedForFutureUse %></td>
+    <td><%= product.ReservedForFutureUse %></td>
+    <td><%= product.ReservedForFutureUse %></td>
+    <td><%= product.ReservedForFutureUse %></td>
+    <td><%= link_to 'Show', product %></td>
+    <td><%= link_to 'Edit', edit_product_path(product) %></td>
+    <td><%= link_to 'Destroy', product, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Product', new_product_path %>

@@ -1,0 +1,25 @@
+<%= form_for(@tdc2sasmapping) do |f| %>
+  <% if @tdc2sasmapping.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tdc2sasmapping.errors.count, "error") %> prohibited this tdc2sasmapping from being saved:</h2>
+
+      <ul>
+      <% @tdc2sasmapping.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sas %><br />
+    <%= f.text_field :sas %>
+  </div>
+  <div class="field">
+    <%= f.label :tdc %><br />
+    <%= f.text_field :tdc %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
